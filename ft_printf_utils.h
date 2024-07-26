@@ -6,7 +6,7 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 10:23:48 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/07/06 11:37:35 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/07/26 13:44:52 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include "ft_printf.h"
 # include <stdarg.h>
 
+int		ft_printf_fd(const char *format, va_list *ap, int fd);
 t_fmt	*init_fmt(void);
 t_fmt	*parse_format(unsigned char *c);
 int		format_picker(t_fmt *fmt, va_list *ap, int fd);

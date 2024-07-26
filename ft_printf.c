@@ -6,7 +6,7 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 20:50:27 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/07/09 16:03:10 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/07/26 13:44:39 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,16 +69,5 @@ int	ft_printf_fd(const char *format, va_list *ap, int fd)
 		return (-1);
 	str = (unsigned char *)format;
 	count = traverse_str(str, ap, fd);
-	return (count);
-}
-
-int	ft_printf(const char *format, ...)
-{
-	int		count;
-	va_list	ap;
-
-	va_start(ap, format);
-	count = ft_printf_fd(format, &ap, 1);
-	va_end(ap);
 	return (count);
 }
