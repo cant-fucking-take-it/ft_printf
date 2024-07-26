@@ -1,4 +1,4 @@
-SRC_FILES = formatters.c ft_printf.c parser.c prints.c set_flag.c
+SRC_FILES = formatters.c ft_printfs.c ft_printf.c parser.c prints.c set_flag.c
 OBJ_FILES = $(patsubst %.c,$(BUILD_DIR)/%.o,$(SRC_FILES))
 HDR_FILES = ft_printf.h ft_printf_utils.h
 
